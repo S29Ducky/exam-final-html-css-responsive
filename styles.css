@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+section {
+	padding: 48px;
+}
+
+article {
+	padding-bottom: 32px;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+img {
+	border-radius: 16px 16px 0 0;
+	padding-bottom: 24px;
+}
+
+h2 {
+	color: #1c202b;
+	font-weight: 800;
+	font-size: 24px;
+	padding-bottom: 12px;
+}
+
+.senior {
+	background-color: #0a327b;
+	padding: 4px;
+	border-radius: 6px;
+	font-weight: 800;
+	font-size: 16px;
+	color: #ffff;
+}
+
+p {
+	color: #5e6778;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 20px 0 18px 0;
+}
+
+.days {
+	color: #939cad;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+@media screen and (min-width: 960px) {
+	section {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, 1fr);
+	}
+
+    article{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+    }
+
+	img {
+		border-radius: 16px 0 0 16px;
+		padding: 0;
+	}
+
+	h2 {
+		padding: 0 12px;
+	}
+
+	p {
+		padding: 18px 0 18px 12px;
+	}
+
+	.nameXp {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	section {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr 1fr;
+	}
+
+	article {
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+	}
+}
