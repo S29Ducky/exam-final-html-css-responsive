@@ -17,9 +17,28 @@ article {
 	grid-template-columns: 1fr;
 }
 
-img {
+.img1{
+background: center/cover url(./assets/zoe.jpg);
+    height: 100%;
+    width: 100%;
+}.img2{
+background: center/cover url(./assets/anouk.jpg);
+    height: 100%;
+    width: 100%;
+}.img3{
+background: center/cover url(./assets/aicha.jpg);
+    height: 100%;
+    width: 100%;
+}.img4{
+background: center/cover url(./assets/yuno.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+.img {
 	border-radius: 16px 16px 0 0;
-	padding-bottom: 24px;
+    height: 10rem;
+    width: 100%;
 }
 
 h2 {
@@ -64,7 +83,7 @@ p {
         grid-template-rows: 1fr;
     }
 
-	img {
+	.img {
 		border-radius: 16px 0 0 16px;
 		padding: 0;
 	}
@@ -95,4 +114,8 @@ p {
 		display: flex;
 		flex-direction: column;
 	}
+
+    .img{
+        border-radius: 16px 16px 0 0;
+    }
 }
